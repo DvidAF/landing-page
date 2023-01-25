@@ -8,8 +8,12 @@ body{
     margin: 0%;
     
 }
+.content, .content2, .content3, .content4{
+    padding: 5% 0px;  
+}
 .header, .content{
-    margin: 0px 20%;  
+    margin-left: 20%;
+    margin-right: 20%;  
 }
 .header{
     display: flex;
@@ -18,11 +22,13 @@ body{
 }
 
 .header ul{
-    flex: 0 0 500px;
+    flex: 0 1 500px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-end;
+    gap: 30px;
     list-style: none;
     margin-left: auto;
+    flex-wrap: wrap;
 }
 
 .header a{
@@ -48,24 +54,22 @@ body{
 .text1 h2{
     font-size: 50px;
     font-weight: 900;
-}
-
-.content button{
-    color: white;
-    background-color: #3882F6;
-    border-style: none;
-    border-radius: 10px;
-    padding: 8px 40px;
+    margin-bottom: 0px;
 }
 
 .content a{
     color:white;
     text-decoration: none;
+    background-color: #3882F6;
+    border-radius: 10px;
+    padding: 8px 40px;
 }
 
 .content img{
     width: 500px;
     flex: 0 1 auto;
+    margin-left: auto;
+
 }
 
 .content2{
@@ -86,6 +90,10 @@ body{
 
 .content2 .im{
     width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .content2 img{
@@ -93,6 +101,60 @@ body{
     height: 200px;
     border-radius: 40px;
     border: #3882F6 solid 5px;
+}
+.content3{
+    background: #E5E7EB;
+    color: #1F2937;
+    padding: 5% 0;
+}
+.content3 p{
+    font-style: italic;
+    font-size: 26px;
+    margin: 0;;
+}
+.content3 .quote{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:  0px 25%;
+
+}
+.content3 .author{
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 900;
+    margin-left: auto;
+}
+
+.content4{
+    background: white;
+    color: white;
+    padding: 5% 0;
+    display: flex;
+    justify-content: center;
+}
+.content4 .blue{
+    background: #3882F6;
+    display: flex;
+    width: 45rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 2rem 6rem;
+    border-radius: 10px;
+}
+.content4 p , h3{
+    margin: 0.5rem;
+}
+.content4 a{
+    color: white; 
+    text-decoration: none;
+    background: #3882F6;
+    border-style: none;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 0.5rem 2rem;
 }
 
 .footer{
